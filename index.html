@@ -32,14 +32,21 @@
     <div class="video-frame">
         <div class="video-inner">
             <div class="video-player">
-                <iframe
-                    src="https://www.youtube.com/embed/kmciiBsSmu4" 
-                    title="YouTube video player" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                 allowfullscreen></iframe>
+            <div class="yt-player" data-video-id="kmciiBsSmu4"> </div> <!---we've replaced the iframe div with this, which will throw in an iframe-->
              </div> <!--- close video player-->
         </div> <!-- close video inner -->
     </div> <!-- close video frame -->
+
+    <div class="container">
+        <h3>Chapters</h3>
+        <ol class="chapters">
+            <li data-timecode="00:00:00"><a href="#">Chapter 1</a></li>
+            <li data-timecode="01:00:00"><a href="#">Chapter 2</a></li>
+            <li data-timecode="02:00:00"><a href="#">Chapter 3</a></li>
+            <li data-timecode="03:00:00"><a href="#">Chapter 4</a></li>
+            <li data-timecode="04:00:00"><a href="#">Chapter 5</a></li>
+        </ol>
+    </div>
 
         <div class="container">
             <p>Red hair crookshanks bludger Marauder&rsquo;s Map Prongs sunshine daisies butter mellow Ludo Bagman. Beaters gobbledegook N.E.W.T., Honeydukes eriseD inferi Wormtail. Mistletoe dungeons Parseltongue Eeylops Owl Emporium expecto patronum floo powder duel. Gillyweed portkey, keeper Godric&rsquo;s Hollow telescope, splinched fire-whisky silver Leprechaun O.W.L. stroke the spine. Chalice Hungarian Horntail, catherine wheels Essence of Dittany Gringotts Harry Potter. Prophecies Yaxley green eyes Remembrall horcrux hand of the servant. Devil&rsquo;s snare love potion Ravenclaw, Professor Sinistra time-turner steak and kidney pie. Cabbage Daily Prophet letters from no one Dervish and Banges leg.</p>
@@ -64,6 +71,7 @@
 
 
     <!-- Your javascript should be called here -->
+    <script src="https://www.youtube.com/iframe_api" async></script>
     <script src="https://watchjs.tcm.io/js/watch.min.js"></script>
     <script src="main.js"></script>
 </body>
